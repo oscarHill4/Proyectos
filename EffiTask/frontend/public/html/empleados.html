@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style_forms.css">
+    <title>empleados</title>
+</head>
+<body>
+
+    <header class="header">
+        <p>EFFITASK</p>
+        <a href="">Mas informacion</a>
+        <a href="">Otras opciones</a>
+        <a href="../html/initial_section.html">salir</a>
+    </header>
+    <section class="contenedor">
+        <div class="division">
+            <form id="form-empleados" class="iniciar-sesion">
+                <h1>Sube los empleados</h1>
+                <div class="contenedor-input">
+                    <img class="iconos" src="../img/cedula.png" alt="icono cedula">
+                    <input type="number" name="cedula" placeholder="Número de cedula" required>
+                </div>
+                <div class="contenedor-input">
+                    <img class="iconos" src="../img/Person outline.png" alt="icono persona">
+                    <input type="text" name="nombre_empleado" placeholder="Nombre del empleado" required>
+                </div>
+                <div class="contenedor-input">
+                    <img class="iconos" src="../img/logo zona.png" alt="icono zona">
+                    <select class="barra" name="zona" id="zona" required>
+                        <option value="" disabled selected>Seleccione una zona</option>
+                    </select>
+                </div>
+                <div class="contenedor-input">
+                    <img class="iconos" src="../img/puestos.png" alt="icono empleado">
+                    <input type="text" name="cargo" placeholder="Cargo que desempeña" required>
+                </div>
+                <div class="contenedor-input">
+                    <img class="iconos" src="../img/numero telefono.png" alt="icono telefono">
+                    <input type="number" name="telefono_empleado" placeholder="telefono" required>
+                </div>
+                <button>SUBIR EMPLEADO</button>
+            </form>
+        </div>
+    </section>
+    
+    <script src="../js/script_empleados.js"></script>
+</body>
+</html>

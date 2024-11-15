@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style_forms.css">
+    <title>productos</title>
+</head>
+<body>
+
+    <header class="header">
+        <p>EFFITASK</p>
+        <a href="">Mas informacion</a>
+        <a href="">Otras opciones</a>
+        <a href="../html/initial_section.html">salir</a>
+    </header>
+    <section class="contenedor">
+        <div class="division">
+            <form id="form-empleados" class="iniciar-sesion">
+                <h1>Sube tu producto</h1>
+                <div class="contenedor-input">
+                    <img class="iconos" src="../img/numero id.png" alt="icono numero id">
+                    <input type="number" name="id_producto" placeholder="número unico de producto" required>
+                </div>
+                <div class="contenedor-input">
+                    <img class="iconos" src="../img/logo producto.png" alt="icono producto">
+                    <input type="text" name="nombre_producto" placeholder="Nombre del producto" required>
+                </div>
+                <div class="contenedor-input">
+                    <img class="iconos" src="../img/numero id.png" alt="icono numero id">
+                    <input type="text" name="observaciones" placeholder="Observaciones">
+                </div>
+                <div class="contenedor-input">
+                    <img class="iconos" src="../img/fecha recibido.png" alt="icono recibido">
+                    <input type="datetime-local" name="fecha_entrada" placeholder="Fecha de ingreso" required>
+                </div>
+                <div class="contenedor-input">
+                    <img class="iconos" src="../img/fecha entrega.png" alt="icono entrega">
+                    <input type="datetime-local" name="fecha_salida" placeholder="Fecha de entrega" required>
+                </div>
+                <button>SUBIR PRODUCTO</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="../js/script_productos.js"></script>
+    
+</body>
+</html>

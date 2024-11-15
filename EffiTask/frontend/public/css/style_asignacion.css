@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Dela+Gothic+One&family=Spicy+Rice&display=swap');
+*{
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #F0F4F3;
+    align-items: center;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #3ab397;
+    border-radius: 10px;
+    color: white;
+}
+
+.header a{
+    font-size: 125%;
+    width: 31%;
+    align-content: center;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    transition: all 400ms ease;
+}
+
+.header a:hover{
+    background-color: #3aa8ad;
+    font-size: 150%;
+}
+
+.header p{
+    font-family: "Dela Gothic One", sans-serif;
+    font-size: 150%;
+    margin: 1% 2% 1% 2%;
+}
+
+.contenedor{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.5%;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.desplegable{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+}
+
+.desplegable div{
+    width: 100%;
+}
+
+.titulos{
+    width: 95%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    background-color: #3ab397;
+    border-radius: 10px;
+    color: white;
+}
+
+.titulos h3{
+    text-align: center;
+}
+
+.id{
+    width: 10%;
+}
+
+.prod{
+    width: 25%;
+}
+
+.entr{
+    width: 10%;
+}
+
+.obse{
+    width: 20%;
+}
+
+.selc{
+    width: 20%;
+}
+
+.opc{
+    width: 15%;
+}
+
+.info{
+    width: 95%; 
+    align-items: center;  
+}
+
+.item{
+    display: flex;
+    flex-direction: row;
+    padding: 2% 0% 2% 0%;
+    border-radius: 10px;
+    font-size: 125%;
+    margin: 1% 0% 1% 0%;
+}
+
+.id_producto{
+    width: 10%;
+    text-align: center;
+}
+
+.nombre_producto{
+    width: 25%;
+    text-align: center;
+}
+
+.fecha_salida{
+    width: 10%;
+    text-align: center;
+}
+
+.observaciones{
+    width: 20%;
+    text-align: center;
+}
+
+.sel_empleado{
+    width: 20%;
+    font-size: 90%;
+    border: 1px solid #C9CCCB;
+    background-color: inherit;
+}
+
+.btn_asig{
+    width: 15%;
+    font-size: 100%;
+    text-align: center;
+    margin-left: 1%;
+    border: none;
+    border-radius: 7.5px;
+    cursor: pointer;
+    background-color: #3ab397;
+    color: white;
+}
+
+.btn_asig:hover{
+    background-color: #3aa8ad;
+}

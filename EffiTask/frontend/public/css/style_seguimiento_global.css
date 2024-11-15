@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Dela+Gothic+One&family=Spicy+Rice&display=swap');
+*{
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #F0F4F3;
+    align-items: center;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #3ab397;
+    border-radius: 10px;
+    color: white;
+}
+
+.header a{
+    font-size: 125%;
+    width: 31%;
+    align-content: center;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    transition: all 400ms ease;
+}
+
+.header a:hover{
+    background-color: #3aa8ad;
+    font-size: 150%;
+}
+
+.header p{
+    font-family: "Dela Gothic One", sans-serif;
+    font-size: 150%;
+    margin: 1% 2% 1% 2%;
+}
+
+.contenedor{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.5%;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.desplegable{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+}
+
+.desplegable div{
+    width: 100%;
+}
+
+.titulos{
+    width: 95%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    background-color: #3ab397;
+    border-radius: 10px;
+    color: white;
+}
+
+.titulos h3{
+    text-align: center;
+}
+
+.id_prod{
+    width: 10%;
+}
+
+.prod{
+    width: 20%;
+}
+
+.fech{
+    width: 17.5%;
+}
+
+.zon{
+    width: 15%;
+}
+
+.emp{
+    width: 17.5%;
+}
+
+.tie{
+    width: 10%;
+}
+
+.opc{
+    width: 10%;
+}
+
+.info{
+    width: 95%;
+}
+
+.producto-item{
+    display: flex;
+    flex-direction: row;
+}
+
+.producto-item div{
+    text-align: center;
+    align-items: center;
+    font-size: 125%;
+    margin: 1.5% 0% 1.5% 0%;
+}
+
+.finalizar-producto{
+    width: 10%;
+    font-size: 100%;
+    text-align: center;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    border: none;
+    border-radius: 7.5px;
+    cursor: pointer;
+    background-color: #3ab397;
+    color: white;
+}
+
+.finalizar-producto:hover{
+    background-color: #3aa8ad;
+}
+
+.id-producto{
+    width: 10%;
+}
+
+.nombre-producto{
+    width: 20%;
+}
+
+.fecha-salida{
+    width: 17.5%;
+}
+
+.nombre-zona{
+    width: 15%;
+}
+
+.nombre-empleado{
+    width: 17.5%;
+}
+
+.crono{
+    width: 10%;
+}

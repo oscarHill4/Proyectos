@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style_login.css">
+    <title>login</title>
+</head>
+<body>
+    <section class="contenedor">
+        <div class="division">
+            <form id="form-iniciar-sesion" class="iniciar-sesion">
+                <h1>Iniciar Sesión</h1>
+                <div class="instrucciones">
+                    <div id="frase-instruccion" class="frase">
+                        Recuerda ingresar las credenciales correctas
+                    </div>
+                </div>
+                <span>Ingrese sus datos para iniciar</span>
+                <div class="contenedor-input">
+                    <img class="iconos" src="../img/Gmail Logo.png" alt="icono de correo">
+                    <input type="email" name="correo" placeholder="Ingrese su correo electronico" required>
+                </div>
+                <div class="contenedor-input">
+                    <img class="iconos" src="../img/Padlock Outline.png" alt="icono de contraseña">
+                    <input type="password" name="contraseña" placeholder="Ingrese su contraseña" required>
+                </div>
+                <a href="#">¿Olvidaste tu contraseña?</a>
+                <button>INICIAR SESION</button>
+            </form>
+        </div>
+        <div class="division">
+            <form id="form-registrarse" class="registrarse">
+                <h1>Registrarse</h1>
+                <div class="instrucciones">
+                    <div class="frase-2">Ingresa correctamente los datos para registrarte</div>
+                </div>
+                <span>Ingrese sus datos para registro</span>
+                <div class="contenedor-input">
+                    <img class="iconos" src="../img/Person outline.png">
+                    <input type="text" name="usuario" placeholder="Ingrese su usuario" required>
+                </div>
+                <div class="contenedor-input">
+                    <img class="iconos" src="../img/Gmail Logo.png" alt="icono de correo">
+                    <input type="email" name="correo" placeholder="Ingrese su correo electronico" required>
+                </div>
+                <div class="contenedor-input">
+                    <img class="iconos" src="../img/Padlock Outline.png" alt="icono de contraseña">
+                    <input type="password" name="contraseña" placeholder="Ingrese su contraseña" required>
+                </div>
+                <button>REGISTRARSE</button>
+            </form>
+        </div>
+        <div class="contenedor-bienvenido">
+            <div class="bienvenido-registro bienvenido">
+                <h1>¡BIENVENIDO!</h1>
+                <p>EffiTask es un software en la nube que pretende satisfacer las necidades de sus usuarios</p>
+                <button id="btn-registro">Registrarse</button>
+            </div>
+            <div class="bienvenido-inicio-sesion bienvenido">
+                <h1>¡HOLA!</h1>
+                <p>Envia tus datos para crear una cuenta y disfrutar de los veneficios de EffiTask</p>
+                <button id="btn-inicio-sesion">Inicio de session</button>
+            </div>
+        </div>
+    </section>
+    
+    <script src="../js/script_login.js"></script>
+</body>
+</html>

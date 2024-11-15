@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <title></title>
+</head>
+<body class="fondo">
+
+  <div id="pantalla-inicio">
+
+    <div class="row justify-content-center">
+      <h1 class="titulo">WATERMELON TRIVIA</h1>
+    </div>
+    <div class="row justify-content-center">
+      <button id="jugar" class="boton-inicio" onclick="jugar()">JUGAR</button>
+    </div>
+    <div class="row justify-content-center">
+      <button class="boton-inicio" onclick="instrucciones()">INSTRUCCIONES</button>
+    </div>
+    <div class="row justify-content-center">
+      <button class="boton-inicio" onclick="creditos()">CREDITOS</button>
+    </div>
+    
+  </div>
+
+  <div id="pantalla-juego" class="hidden">
+
+    <div class="row">
+      <div class="col-iconos">
+        <div class="row">
+          <img src="icono-puntaje.png">
+          <div id="puntaje" class="puntaje">0</div>
+        </div>
+      </div>
+      <div class="col-iconos">
+        <div class="row justify-content-center">
+          <div id="contador" class="contador">2:30</div>
+        </div>
+      </div>
+      <div class="col-iconos">
+        <div class="row">
+          <img class="icono-vidas" src="icono-vidas.png">
+          <div id="vidas" class="vidas">5</div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div id="contenedor-pregunta" class="contenedor-pregunta"></div>
+    </div>
+    <div class="row">
+      <div id="respuestas" class="col"></div>
+    </div>
+
+    <div class="row justify-content-center">
+      <button id="salir" class="salir-juego" onclick="regresarJuego()">REGRESAR</button>
+    </div>
+
+  </div>
+
+  <div id="pantalla-instrucciones" class="hidden">
+    <div class="row justify-content-center mensaje">
+      <p>¡Bienvenido a "Watermelon Trivia"!, Ayuda a Elly y a su perro Sam a obtener sandías respondiendo preguntas!. Ganaras 5 trozos de sandía por cada pregunta correcta.Tienes 30 preguntas y 2:30 minutos para responderlas. Comienzas con 5 vidas; pierdes una por cada respuesta incorrecta.¡Apresúrate! Responde antes de que se acabe el tiempo.<br><br>¡Intenta obtener la máxima puntuación! ¡Diviértete ayudando a Elly y a Sam a recolectar sandías!</p>
+    </div>
+    <div class="row justify-content-center">
+      <button id="salir-2" class="salir-juego" onclick="regresarJuego()">REGRESAR</button>
+    </div>
+  </div>
+
+  <div id="pantalla-creditos" class="hidden">
+    <div class="row justify-content-center mensaje">
+      <p>Créditos:<br><br>Idea Original:
+        Oscar Daniel Gil MarínNicolás Martínez MartínezProgramación y Desarrollo:
+        Oscar Daniel Gil MarínNicolás Martínez MartínezDiseño y Concepto:Oscar Daniel Gil MarínNicolás Martínez Martínez<br><br>¡Gracias a todos!</p>
+    </div>
+    <div class="row justify-content-center">
+      <button id="salir-2" class="salir-juego" onclick="regresarJuego()">REGRESAR</button>
+    </div>
+  </div>
+
+  <div id="pantalla-final" class="hidden">
+    <div class="row justify-content-center mensaje">
+      <p>¡Increíble! ¡Eres un verdadero campeón! Tu habilidad para responder las preguntas no solo te ha llevado a la victoria, sino que también has ganado un montón de sandías para Elly y su fiel compañero Sam. ¡Tu esfuerzo y conocimiento han hecho una gran diferencia en sus vidas! ¡Sigue brillando y disfruta de tu merecido triunfo!</p>
+    </div>
+    <div class="row justify-content-center">
+      <button id="salir-2" class="salir-juego" onclick="regresarJuego()">REGRESAR</button>
+    </div>
+  </div>
+
+  <div id="pantalla-pierde" class="hidden">
+    <div class="row justify-content-center mensaje">
+      <p>¡Oh no! Parece que este desafío se escapó de nuestras manos esta vez.Pero no te desanimes, cada respuesta correcta es una oportunidad para aprender y crecer.Recuerda, incluso en la derrota, Elly y Sam siempre apreciarán tu esfuerzo.¡Sigamos adelante juntos en esta aventura de conocimiento!</p>
+    </div>
+    <div class="row justify-content-center">
+      <button id="salir-3" class="salir-juego" onclick="regresarJuego()">REGRESAR</button>
+    </div>
+  </div>
+
+
+  <script src="scripts.js"></script>
+</body>
+</html>
+
