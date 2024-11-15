@@ -54,10 +54,9 @@ document.getElementById('form-registrarse').addEventListener('submit', function(
     .then(response => response.json())
     .then(data => {
         if (data.mensaje) {
-            alert(data.mensaje); // Mensaje de registro exitoso
-            // Aquí puedes redirigir o hacer otras acciones
+            alert(data.mensaje);
         } else {
-            alert(data.error); // Mostrar el error si lo hay
+            alert(data.error);
         }
     })
     .catch(error => console.error('Error:', error));

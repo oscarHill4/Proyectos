@@ -53,7 +53,7 @@ body{
 }
 
 .visible {
-    opacity: 1; /* Hacemos visible el texto */
+    opacity: 1;
 }
 
 .frase-2{
@@ -117,8 +117,6 @@ body{
     color: white;
 }
 
-/*Animacion de los formularios*/
-
 .registrarse{
     transform: translateX(-100%);
 }
@@ -130,8 +128,6 @@ body{
 .contenedor.toggle .registrarse{
     transform: translateX(0);
 }
-
-/*Bienvenido*/
 
 .contenedor-bienvenido{
     position: absolute;
